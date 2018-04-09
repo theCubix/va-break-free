@@ -1,18 +1,24 @@
 import React from 'react';
+import Img from 'gatsby-image'
 
 import './index.scss'
 
 class LandingPage extends React.Component {
   render() {
-    const image = this.props.image
+    const imageLq = this.props.imageLq
+    const imageHq = this.props.imageHq
 
     return (
       <section className="landingpage-section">
         <div className="landingpage-cover container">
-          <h1 className="title">Cover</h1>
+          <div className="square-wrapper">
+            <div className="square-wrapper__child">
+              <Img resolutions={imageHq} fadeIn={true} outerWrapperClassName="square-wrapper__content" style={{ width: '100%', height: '100%' }} />
+            </div>
+          </div>
         </div>
         <div
-          style={{ backgroundImage: `url(${image.src})` }}
+          style={{ backgroundImage: `url(${imageLq.src})` }}
           className="landingpage-background"
         ></div>
       </section>
