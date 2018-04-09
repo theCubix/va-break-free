@@ -1,0 +1,20 @@
+.landingpage {
+  &-section {
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+
+  &-background {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-size: cover;
+    filter: blur(1em) brightness(50%);
+    position: absolute;
+    transform: scale(1.3)
+  }
+}
