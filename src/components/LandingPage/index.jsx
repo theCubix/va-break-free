@@ -8,7 +8,9 @@ class LandingPage extends React.Component {
 
     return (
       <section className="landingpage-section">
-        <div className="landingpage-cover"></div>
+        <div className="landingpage-cover container">
+          <h1 className="title">Cover</h1>
+        </div>
         <div
           style={{ backgroundImage: `url(${image.src})` }}
           className="landingpage-background"
