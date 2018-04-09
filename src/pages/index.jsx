@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import LandingPage from '../components/LandingPage'
 
+import './sass/index.scss'
+
 class IndexPage extends Component {
   render() {
     const image = this.props.data.landingPageBackgroundImageLowQuality.childImageSharp.resolutions
