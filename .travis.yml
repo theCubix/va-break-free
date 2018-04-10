@@ -18,6 +18,7 @@ before_deploy:
 deploy:
   - provider: pages
   - skip_cleanup: true
-  - github_token: $GH_PAGES_TOKEN
+  - github_token: $GH_PAGES
+  - keep-history: true
   - on:
       branch: master
