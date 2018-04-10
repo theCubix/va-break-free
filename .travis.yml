@@ -1,6 +1,9 @@
 
 language: node_js
 
+env:
+  - NODE_ENV='production'
+
 os:
   - linux
   - osx
@@ -13,4 +16,12 @@ node_js:
 
 script:
   - npm install
+  - npm run build
   
+deploy:
+  - provider: pages
+  - skip-cleanup: true
+  - github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
+  - keep-history: true
+  - on:
+      branch: master
