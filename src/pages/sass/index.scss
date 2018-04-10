@@ -1,2 +1,9 @@
 @import './container.scss';
 @import './square-wrapper.scss';
+@import './typography.scss';
+@import '../../sass/variables.scss';
+@import '../../sass/media.scss';
+
+body {
+  background-color: $dark-pr;
+}
