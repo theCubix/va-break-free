@@ -4,6 +4,7 @@ import LandingPage from '../components/LandingPage';
 import SectionAppleMusicEmbed from '../components/SectionAppleMusicEmbed';
 import SectionLinksToShops from '../components/SectionLinksToShops';
 import SectionStory from '../components/SectionStory';
+import SectionMusicIsLife from '../components/SectionMusicIsLife';
 
 import './sass/index.scss'
 
@@ -39,6 +40,8 @@ class IndexPage extends Component {
         <SectionStory
           imageStory={imageStory}
         />
+
+        <SectionMusicIsLife />
       </div>
     )
   }

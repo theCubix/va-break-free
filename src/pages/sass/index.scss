@@ -7,3 +7,7 @@
 body {
   background-color: $dark-pr;
 }
+
+section:last-child {
+  margin-bottom: 3em;
+}
