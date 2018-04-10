@@ -11,7 +11,7 @@ import Typography from 'typography';
 const typography = new Typography({
   baseFontSize: '14px',
   baseLineHeight: 1.62,
-  scaleRatio: 2,
+  scaleRatio: 2.5,
   googleFonts: [
     {
       name: 'Roboto Condensed',
@@ -41,20 +41,6 @@ const typography = new Typography({
   bodyWeight: 400,
   boldWeight: 700,
   includeNormalize: true,
-  /*overrideStyles: function overrideStyles(_ref, options) {
-    var linkColor = '#950451';
-    return _defineProperty({
-      a: {
-        color: linkColor,
-        textDecoration: 'underline',
-        textDecorationColor: 'rgba(51, 51, 51, 1)',
-        transition: 'text-decoration-color 200ms ease'
-      },
-      'a:hover': {
-        textDecorationColor: 'rgba(51, 51, 51, 0)'
-      }
-    })
-  }*/
 });
 
 export default typography;
