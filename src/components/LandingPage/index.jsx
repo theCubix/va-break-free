@@ -1,7 +1,8 @@
 import React from 'react';
-import Img from 'gatsby-image'
+import Img from 'gatsby-image';
+import ButtonLink from '../ButtonLink'
 
-import './index.scss'
+import './index.scss';
 
 class LandingPage extends React.Component {
   render() {
@@ -16,6 +17,8 @@ class LandingPage extends React.Component {
               <Img resolutions={imageHq} fadeIn={true} outerWrapperClassName="square-wrapper__content" style={{ width: '100%', height: '100%' }} />
             </div>
           </div>
+
+          <ButtonLink linkTo={'#there'} linkTitle={'Link Title'} />
         </div>
         <div
           style={{ backgroundImage: `url(${imageLq.src})` }}
