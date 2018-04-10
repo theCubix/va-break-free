@@ -11,6 +11,50 @@
 
   &-cover {
     top: 6em;
+
+    @include phone {
+      top: 10em;
+    }
+  }
+
+  &-link {
+    margin-top: 3em;
+    position: relative;
+    text-align: center;
+    width: 100%;
+
+    @include phone {
+      margin-top: 10em;
+    }
+  }
+
+  &-icon {
+    animation-name: floating-icon;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    display: block;
+    margin: 1em auto 0 auto;
+    
+    @include phone {
+      margin: 3em auto 0 auto;
+    }
+
+    @keyframes floating-icon {
+      0% {
+        opacity: 0;
+        transform: translateY(-12px);
+      }
+
+      50% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      100% {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+    }
   }
 
   &-background {

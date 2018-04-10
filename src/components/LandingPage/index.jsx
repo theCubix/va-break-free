@@ -4,6 +4,8 @@ import ButtonLink from '../ButtonLink'
 
 import './index.scss';
 
+import iconArrowDown from '../../assets/icons/icon_arrow_down.svg'
+
 class LandingPage extends React.Component {
   render() {
     const imageLq = this.props.imageLq
@@ -18,7 +20,17 @@ class LandingPage extends React.Component {
             </div>
           </div>
 
-          <ButtonLink linkTo={'#there'} linkTitle={'Link Title'} />
+          <div className="landingpage-link">
+            <ButtonLink
+              linkTo={'#section-one'}
+              linkTitle={'Jetzt entdecken'}
+            />
+          </div>
+          
+          <img
+            src={iconArrowDown} alt="Icon Arrow Down"
+            className="landingpage-icon"
+          />
         </div>
         <div
           style={{ backgroundImage: `url(${imageLq.src})` }}
