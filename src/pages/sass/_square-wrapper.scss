@@ -1,7 +1,18 @@
+@import '../../sass/media.scss';
+
 .square-wrapper {
   position: relative;
   margin: 0 auto;
   width: 75%;
+
+
+  @include tablet {
+    width: 65%;
+  }
+
+  @include desktop {
+    width: 65%;
+  }
 
   &__child {
     border-radius: 3px;
