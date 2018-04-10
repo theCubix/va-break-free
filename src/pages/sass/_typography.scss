@@ -1,0 +1,20 @@
+@import '../../sass/variables.scss';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $white;
+}
+
+.title {
+  padding: 2.5em 0 1.5em 0;
+  text-align: center;
+  text-transform: uppercase;
+
+  @include phone {
+    padding: 1.5em 0;
+  }
+}
