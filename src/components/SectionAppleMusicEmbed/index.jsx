@@ -14,7 +14,7 @@ class SectionAppleMusicEmbed extends React.Component {
       <Anchor id={'section-one'}>
         <section className="music-embedd-section">
           <div className="container">
-            <h1 className="title">{title}</h1>
+            <h2 className="title">{title}</h2>
             <iframe
               src={src}
               height={height}

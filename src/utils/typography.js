@@ -11,7 +11,7 @@ import Typography from 'typography';
 const typography = new Typography({
   baseFontSize: '14px',
   baseLineHeight: 1.62,
-  scaleRatio: 2.5,
+  scaleRatio: 4,
   googleFonts: [
     {
       name: 'Roboto Condensed',
