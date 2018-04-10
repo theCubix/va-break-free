@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import LandingPage from '../components/LandingPage';
 import SectionAppleMusicEmbed from '../components/SectionAppleMusicEmbed';
 import SectionLinksToShops from '../components/SectionLinksToShops';
+import SectionStory from '../components/SectionStory';
 
 import './sass/index.scss'
 
@@ -10,6 +11,7 @@ class IndexPage extends Component {
   render() {
     const imageLq = this.props.data.landingPageBackgroundImageLowQuality.childImageSharp.resolutions;
     const imageHq = this.props.data.landingPageBackgroundImageHighQuality.childImageSharp.resolutions;
+    const imageStory = this.props.data.sectionStoryImage.childImageSharp.resolutions;
 
     return (
       <div>
@@ -33,6 +35,10 @@ class IndexPage extends Component {
             { id: 4, title: 'Amazon', url: 'https://www.amazon.de/Nothing-But-Thieves-Deluxe/dp/B01125JQBK/ref=sr_1_1?s=dmusic&ie=UTF8&qid=1523386772&sr=1-1-mp3-albums-bar-strip-0&keywords=nothing+but+thieves+deluxe' }
           ]}
         />
+
+        <SectionStory
+          imageStory={imageStory}
+        />
       </div>
     )
   }
@@ -50,6 +56,13 @@ export const pageQuery = graphql`
       }
     }
     landingPageBackgroundImageHighQuality: file(relativePath: {eq: "cover/break-free-hq.jpg"}) {
+      childImageSharp {
+        resolutions(width: 1000, height: 1000, quality: 100) {
+          ...GatsbyImageSharpResolutions
+        }
+      }
+    }
+    sectionStoryImage: file(relativePath: {eq: "story/voltage-arc-after-recording.jpeg"}) {
       childImageSharp {
         resolutions(width: 1000, height: 1000, quality: 100) {
           ...GatsbyImageSharpResolutions
