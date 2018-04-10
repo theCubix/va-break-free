@@ -1,0 +1,23 @@
+
+language: node_js
+
+env:
+  - NODE_ENV='production'
+
+node_js:
+  - "8"
+
+script:
+  - npm install
+  - gatsby build
+
+before_deploy:
+  - cd ./public/
+  - ls
+
+deploy:
+  - provider: pages
+  - local_dir: './'
+  - skip_cleanup: true
+  - github_token: $GH_PAGES
+  - keep-history: true
