@@ -13,6 +13,7 @@ script:
 
 before_deploy:
   - cd ./public/
+  - ls
 
 deploy:
   - provider: pages
