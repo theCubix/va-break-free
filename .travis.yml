@@ -4,14 +4,7 @@ language: node_js
 env:
   - NODE_ENV='production'
 
-os:
-  - linux
-  - osx
-
 node_js:
-  - "node"
-  - "lts/*"
-  - "7"
   - "8"
 
 script:
@@ -21,7 +14,7 @@ script:
 deploy:
   - provider: pages
   - skip-cleanup: true
-  - github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
+  - github-token: $GH_PAGES_TOKEN
   - keep-history: true
   - on:
       branch: master
