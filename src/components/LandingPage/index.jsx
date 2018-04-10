@@ -16,7 +16,15 @@ class LandingPage extends React.Component {
         <div className="landingpage-cover container">
           <div className="square-wrapper">
             <div className="square-wrapper__child">
-              <Img resolutions={imageHq} fadeIn={true} outerWrapperClassName="square-wrapper__content" style={{ width: '100%', height: '100%' }} />
+              <Img
+                resolutions={imageHq}
+                fadeIn={true}
+                outerWrapperClassName="square-wrapper__content"
+                style={{
+                  width: '100%',
+                  height: '100%'
+                }}
+              />
             </div>
           </div>
 
