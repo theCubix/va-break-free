@@ -10,12 +10,11 @@ node_js:
 script:
   - npm install
   - npm run build
-  - export token=$GH_PAGES_TOKEN
   
 deploy:
   - provider: pages
-  - skip-cleanup: true
-  - github-token: $token
-  - keep-history: true
+  - skip_cleanup: true
+  - github_token: $GH_PAGES_TOKEN
+  - local_dir: build
   - on:
       branch: master
