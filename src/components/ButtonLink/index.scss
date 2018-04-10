@@ -8,10 +8,11 @@
   padding: 7px 35px;
   text-decoration: none;
   transition-duration: 200ms;
-  transition-property: background-color, color;
+  transition-property: background-color, color, transform;
 
   &:hover {
     background-color: rgba($white, 0.8);
     color: $dark-pr;
+    transform: translateY(-1px);
   }
 }
