@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
-import LandingPage from '../components/LandingPage'
+import LandingPage from '../components/LandingPage';
+import SectionAppleMusicEmbed from '../components/SectionAppleMusicEmbed';
 
 import './sass/index.scss'
 
@@ -14,7 +15,13 @@ class IndexPage extends Component {
         <LandingPage
           imageLq={imageLq}
           imageHq={imageHq}
-          />
+        />
+        <SectionAppleMusicEmbed
+          title="Break Free &ndash; unsere erste EP"
+          src="https://tools.applemusic.com/embed/v1/album/1016210775?country=ch"
+          height="500px"
+          width="100%"
+        />
       </div>
     )
   }
