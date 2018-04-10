@@ -1,5 +1,11 @@
+@import '../../sass/media.scss';
+
 .container {
   position: relative;
   margin: 0 auto;
   max-width: 600px;
+
+  @include phone {
+    padding: 16px;
+  }
 }
