@@ -1,7 +1,15 @@
+@import '../../sass/media.scss';
+@import '../../sass/variables.scss';
+
 .story-section {
   &__text {
     margin: 3em 0;
     text-align: justify;
     hyphens: auto;
+  }
+
+  &__list {
+    color: $white;
+    list-style: circle;
   }
 }
