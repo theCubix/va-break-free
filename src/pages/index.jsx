@@ -54,23 +54,23 @@ export default IndexPage;
 
 export const pageQuery = graphql`
   query Default {
-    landingPageBackgroundImageLowQuality: file(relativePath: {eq: "cover/break-free-hq.jpg"}) {
+    landingPageBackgroundImageLowQuality: file(relativePath: {eq: "break-free-hq-v4.jpg"}) {
       childImageSharp {
         resolutions(width: 40, height: 40, quality: 10) {
           src
         }
       }
     }
-    landingPageBackgroundImageHighQuality: file(relativePath: {eq: "cover/break-free-hq.jpg"}) {
+    landingPageBackgroundImageHighQuality: file(relativePath: {eq: "break-free-hq-v4.jpg"}) {
       childImageSharp {
         resolutions(width: 1000, height: 1000, quality: 100) {
           ...GatsbyImageSharpResolutions
         }
       }
     }
-    sectionStoryImage: file(relativePath: {eq: "story/voltage-arc-after-recording.jpeg"}) {
+    sectionStoryImage: file(relativePath: {eq: "voltage-arc-after-recording.jpeg"}) {
       childImageSharp {
-        resolutions(width: 1000, height: 1000, quality: 100) {
+        resolutions(width: 800, height: 800, quality: 100) {
           ...GatsbyImageSharpResolutions
         }
       }
