@@ -13,7 +13,7 @@
     top: 6em;
 
     @include phone {
-      top: 10em;
+      top: 7em;
     }
   }
 
@@ -22,10 +22,6 @@
     position: relative;
     text-align: center;
     width: 100%;
-
-    @include phone {
-      margin-top: 10em;
-    }
   }
 
   &-icon {
