@@ -25,7 +25,16 @@ class SectionStory extends React.Component {
           </div>
 
           <p className="story-section__text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, fuga! Praesentium alias fugit explicabo minus obcaecati, nemo optio beatae est? Ab sapiente quidem esse, rerum blanditiis odio quasi, iure laborum aut impedit eius natus nostrum deserunt officiis odit minus, saepe minima facilis unde. Sed optio inventore voluptas doloribus, ex ad alias nemo iure repudiandae voluptatem quasi molestias omnis tempore ducimus esse vel quos explicabo voluptate atque nam? Perspiciatis, incidunt architecto enim natus minus voluptatem inventore dolor. Sed amet magni laborum pariatur illo. Nostrum saepe natus exercitationem fugiat et esse quod non facilis, consectetur pariatur, ratione velit, alias nulla eligendi eos!
+            Zu Beginn dieses Jahres haben wir einen weiteren Meilenstein unserer Bandgeschichte erreicht und unseren ersten Studio-Aufnahmen gemacht. Nach rund drei Tagen pausenloser Vorbereitung machten wir uns auf die Socken Richtung Ostschweiz. Genauer gesagt, St. Margrethen. Innert weiterer drei Tagen sollten wir dort die Aufnahmen für unsere erste EP machen. Wichtig war uns, dass die Songs von einem breiten Repertoire herrühren. Die folgenden Songs haben das Rennen gemacht:
+          </p>
+          <ul className="story-section__list">
+            <li>Break Free</li>
+            <li>The Poor Do Call</li>
+            <li>Music Is Our Life</li>
+            <li>Fuck The System</li>
+          </ul>
+          <p className="story-section__text">
+            Hier sind alte und neue Songs inbegriffen. Die einen sind etwas schwerer, die anderen etwas «verspielter» &ndash; schlicht ein abwechslungsreicher Mix.
           </p>
         </div>
       </section>
