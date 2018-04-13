@@ -5,6 +5,10 @@
   margin: 0 auto;
   width: 75%;
 
+  &--landingpage {
+    top: 35%;
+    transform: translateY(-50%);
+  }
 
   @include tablet {
     width: 65%;

@@ -14,7 +14,7 @@ class LandingPage extends React.Component {
     return (
       <section className="landingpage-section">
         <div className="landingpage-cover container">
-          <div className="square-wrapper">
+          <div className="square-wrapper square-wrapper--landingpage">
             <div className="square-wrapper__child">
               <Img
                 resolutions={imageHq}
@@ -28,17 +28,19 @@ class LandingPage extends React.Component {
             </div>
           </div>
 
-          <div className="landingpage-link">
-            <ButtonLink
-              linkTo={'#section-one'}
-              linkTitle={'Jetzt entdecken'}
+          <div className="landingpage-bottomwrapper">
+            <div className="landingpage-link">
+              <ButtonLink
+                linkTo={'#section-one'}
+                linkTitle={'Jetzt entdecken'}
+              />
+            </div>
+            
+            <img
+              src={iconArrowDown} alt="Icon Arrow Down"
+              className="landingpage-icon"
             />
           </div>
-          
-          <img
-            src={iconArrowDown} alt="Icon Arrow Down"
-            className="landingpage-icon"
-          />
         </div>
         <div
           style={{ backgroundImage: `url(${imageLq.src})` }}

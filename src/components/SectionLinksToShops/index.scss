@@ -13,6 +13,8 @@
     @include phone {
       &>a {
         display: block;
+        margin: 0 auto 0.5em auto;
+        width: 75%;
       }
     }
   }

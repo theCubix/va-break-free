@@ -7,8 +7,6 @@ import SectionLinksToShops from '../components/SectionLinksToShops';
 import SectionStory from '../components/SectionStory';
 import SectionMusicIsLife from '../components/SectionMusicIsLife';
 
-import Footer from '../components/Footer';
-
 import './sass/index.scss'
 
 class IndexPage extends Component {
@@ -62,7 +60,6 @@ class IndexPage extends Component {
         />
 
         <SectionMusicIsLife />
-
       </div>
     )
   }

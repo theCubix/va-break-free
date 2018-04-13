@@ -10,11 +10,22 @@
   }
 
   &-cover {
-    top: 6em;
-
-    @include phone {
-      top: 7em;
+    // padding-top: 3em;
+    /*
+    &.container {
+      @include phone {
+        padding-top: 7em;
+      }
     }
+    */
+    height: 100vh;
+  }
+
+  &-bottomwrapper {
+    right: 0;
+    bottom: 2em;
+    position: absolute;
+    width: 100%;
   }
 
   &-link {
