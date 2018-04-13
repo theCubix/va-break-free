@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Voltage Arc',
-    url: 'https://www.voltagearc.com/break-free'
+    siteUrl: 'https://www.voltagearc.com/break-free'
   },
   plugins: [
     {
@@ -29,6 +29,9 @@ module.exports = {
         anonymize: true,
         respectDNT: true
       }
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`
     }
   ]
 };

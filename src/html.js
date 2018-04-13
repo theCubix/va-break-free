@@ -29,7 +29,7 @@ class Html extends Component {
     }
 
     return (
-      <html op="news" lang="de">
+      <html lang="de">
         <head>
           {this.props.headComponents}
           <meta name="referrer" content="origin" />
