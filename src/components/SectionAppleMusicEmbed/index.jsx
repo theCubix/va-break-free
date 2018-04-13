@@ -19,7 +19,7 @@ class SectionAppleMusicEmbed extends React.Component {
               src={src}
               height={height}
               width={width}
-              frameborder="0"
+              frameBorder="0"
               style={{
                 border: 'none'
               }}
