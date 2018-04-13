@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Helmet from 'react-helmet';
 
 import LandingPage from '../components/LandingPage';
 import SectionAppleMusicEmbed from '../components/SectionAppleMusicEmbed';
@@ -15,9 +16,26 @@ class IndexPage extends Component {
     const imageLq = this.props.data.landingPageBackgroundImageLowQuality.childImageSharp.resolutions;
     const imageHq = this.props.data.landingPageBackgroundImageHighQuality.childImageSharp.resolutions;
     const imageStory = this.props.data.sectionStoryImage.childImageSharp.resolutions;
+    const metaImage = this.props.data.metaImage.childImageSharp.resolutions;
+    const title = this.props.data.site.siteMetadata.title;
 
     return (
       <div>
+        <Helmet
+          title={`Break Free – ${title}`}
+          meta={[
+            // General
+            { name: 'description', content: '«Break Free» ist die erste EP von Voltage Arc. Höre dir jetzt die EP an und erfahre, wie die Studioaufnahmen entstanden sind.' },
+            { name: 'keywords', content: 'Voltage Arc, Break Free, EP, Aufnahmen, Spotify, Apple Music, Google Music, Musik, Rock, Heavy Metal' },
+
+            // OpenGraph Tags
+            { property: 'og:url', content: 'https://www.voltagearc.com/break-free' },
+            { property: 'og:title', content: `Break Free – ${title}` },
+            { property: 'og:description', content: 'Hör dir jetzt unsere erste EP «Break Free» an.' },
+            { property: 'og:image', content: `${metaImage.src}` }
+          ]}
+        />
+
         <LandingPage
           imageLq={imageLq}
           imageHq={imageHq}
@@ -54,6 +72,18 @@ export default IndexPage;
 
 export const pageQuery = graphql`
   query Default {
+    site: site {
+      siteMetadata {
+        title
+      }
+    }
+    metaImage: file(relativePath: {eq: "break-free-hq-v4.jpg"}) {
+      childImageSharp {
+        resolutions(width: 1000, height: 1000) {
+          src
+        }
+      }
+    }
     landingPageBackgroundImageLowQuality: file(relativePath: {eq: "break-free-hq-v4.jpg"}) {
       childImageSharp {
         resolutions(width: 40, height: 40, quality: 10) {
