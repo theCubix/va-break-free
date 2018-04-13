@@ -1,4 +1,5 @@
 import React from 'react';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 import './index.scss';
 
@@ -9,10 +10,10 @@ class ButtonLink extends React.Component {
     const classNameProp = this.props.className;
 
     return (
-      <a
+      <OutboundLink
         href={linkTo}
         className={`btn-link ${classNameProp}`}
-      >{title}</a>
+      >{title}</OutboundLink>
     )
   }
 };
