@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Voltage Arc',
-    siteUrl: 'https://www.voltagearc.com/break-free'
+    siteUrl: 'https://break-free.voltagearc.com/'
   },
   plugins: [
     {
@@ -24,7 +24,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-86605317-2",
+        trackingId: "UA-86605317-3",
         head: false,
         anonymize: true,
         respectDNT: true
@@ -32,6 +32,12 @@ module.exports = {
     },
     {
       resolve: `gatsby-plugin-sitemap`
+    },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://break-free.voltagearc.com`
+      }
     }
   ]
 };
