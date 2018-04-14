@@ -7,6 +7,18 @@
     overflow: hidden;
     position: relative;
     width: 100%;
+    @include phone {
+      min-height: 640px;
+      min-height: 100vh;
+    }
+    @include tablet {
+      min-height: 768px;
+      min-height: 100vh;
+    }
+    @include desktop {
+      min-height: 840px;
+      min-height: 100vh;
+    }
   }
 
   &-cover {
@@ -18,7 +30,18 @@
       }
     }
     */
-    height: 100vh;
+    @include phone {
+      height: 640px;
+      height: 100vh;
+    }
+    @include tablet {
+      height: 768px;
+      height: 100vh;
+    }
+    @include desktop {
+      height: 840px;
+      height: 100vh;
+    }
   }
 
   &-bottomwrapper {
