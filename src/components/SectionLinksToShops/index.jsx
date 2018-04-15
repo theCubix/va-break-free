@@ -18,7 +18,7 @@ class SectionLinksToShops extends React.Component {
     return (
       <section className="music-shop-section">
         <div className="container">
-          <h2 className="title">Hol dir die EP bei</h2>
+          <h2 className="title">Hör die EP auf</h2>
           <div className="music-shop-section__list">
             {listItems}
           </div>
