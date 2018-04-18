@@ -6,6 +6,7 @@ import SectionAppleMusicEmbed from '../components/SectionAppleMusicEmbed';
 import SectionLinksToShops from '../components/SectionLinksToShops';
 import SectionStory from '../components/SectionStory';
 import SectionMusicIsLife from '../components/SectionMusicIsLife';
+import SectionCredits from '../components/SectionCredits';
 
 import './sass/index.scss'
 
@@ -60,6 +61,8 @@ class IndexPage extends Component {
         />
 
         <SectionMusicIsLife />
+
+        <SectionCredits />
       </div>
     )
   }
