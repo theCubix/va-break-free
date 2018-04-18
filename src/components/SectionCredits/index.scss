@@ -1,0 +1,9 @@
+@import '../../sass/media.scss';
+@import '../../sass/variables.scss';
+
+.credits-section {
+  &__text {
+    text-align: justify;
+    hyphens: auto;
+  }
+}
