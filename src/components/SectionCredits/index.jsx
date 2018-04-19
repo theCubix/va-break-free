@@ -24,7 +24,7 @@ class SectionCredits extends React.Component {
             Das Schwyzer-Örgeli-Intro in «Break Free» wurde Komponiert von Toni Bürgler. Auch ihm möchten wir ein herzliches Dankeschön aussprechen.
           </p>
           <p className="credits-section__text">
-            Die grösste Unterstützung, von ganz am Anfang bis zum Release, erhielten wir von unserem Manager Teddy Eichenberger. Ohne ihn wären wir nie in der Lage gewesen, die Kosten für diese unglaublich spannende und erfreuliche Projekt zu tragen und hätten die EP auch niemals innert so kurzer Zeit aufnehmen können.
+            Die grösste Unterstützung, von ganz am Anfang bis zum Release, erhielten wir von unserem Manager Teddy Eichenberger. Ohne ihn wären wir nie in der Lage gewesen, die Kosten für dieses unglaublich spannende und erfreuliche Projekt zu tragen und hätten die EP auch niemals innert so kurzer Zeit aufnehmen können.
           </p>
         </div>
       </section>
