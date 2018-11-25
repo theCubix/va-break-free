@@ -31,6 +31,7 @@ class Html extends Component {
     return (
       <html lang="de">
         <head>
+          <base href="https://voltagearc.com/break-free/"></base>
           {this.props.headComponents}
           <meta name="referrer" content="origin" />
           <meta charSet="utf-8" />

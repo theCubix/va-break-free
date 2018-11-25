@@ -25,7 +25,12 @@ class SectionStory extends React.Component {
           </div>
 
           <p className="story-section__text">
-            Zu Beginn dieses Jahres haben wir einen weiteren Meilenstein unserer Bandgeschichte erreicht und unseren ersten Studio-Aufnahmen gemacht. Nach rund drei Tagen pausenloser Vorbereitung machten wir uns auf die Socken Richtung Ostschweiz. Genauer gesagt, St. Margrethen. Innert weiterer drei Tagen sollten wir dort die Aufnahmen für unsere erste EP machen. Wichtig war uns, dass die Songs von einem breiten Repertoire herrühren. Die folgenden Songs haben das Rennen gemacht:
+            Zu Beginn dieses Jahres haben wir einen weiteren Meilenstein unserer Bandgeschichte
+            erreicht und unseren ersten Studio-Aufnahmen gemacht. Nach rund drei Tagen pausenloser
+            Vorbereitung machten wir uns auf die Socken Richtung Ostschweiz. Genauer gesagt,
+            St. Margrethen. Innert weiterer drei Tagen sollten wir dort die Aufnahmen für unsere erste
+            EP machen. Wichtig war uns, dass die Songs von einem breiten Repertoire herrühren. Die
+            folgenden Songs haben das Rennen gemacht:
           </p>
           <ul className="story-section__list">
             <li>Break Free</li>
@@ -34,7 +39,8 @@ class SectionStory extends React.Component {
             <li>Fuck The System</li>
           </ul>
           <p className="story-section__text">
-            Hier sind alte und neue Songs inbegriffen. Die einen sind etwas schwerer, die anderen etwas «verspielter» &ndash; schlicht ein abwechslungsreicher Mix.
+            Hier sind alte und neue Songs inbegriffen. Die einen sind etwas schwerer, die anderen etwas
+            «verspielter» &ndash; schlicht ein abwechslungsreicher Mix.
           </p>
         </div>
       </section>
